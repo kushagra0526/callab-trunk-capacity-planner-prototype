@@ -1,0 +1,381 @@
+{
+ "summary": {
+  "sites": 10,
+  "refer_ok_sites": 9,
+  "hairpin all": {
+   "needed_over_naive": 2.2287692716640084,
+   "peak_blocked_at_naive_pct_mean": 25.241208916349045,
+   "peak_blocked_at_naive_pct_max": 37.61904761904762,
+   "supervision_lost_per_day": 0,
+   "callbacks_per_day": 0
+  },
+  "REFER when supported": {
+   "needed_over_naive": 1.2680588782562467,
+   "peak_blocked_at_naive_pct_mean": 3.650641961806442,
+   "peak_blocked_at_naive_pct_max": 28.275862068965516,
+   "supervision_lost_per_day": 113.7,
+   "callbacks_per_day": 0
+  },
+  "adaptive": {
+   "needed_over_naive": 1.4976874003189793,
+   "peak_blocked_at_naive_pct_mean": 6.749081749997491,
+   "peak_blocked_at_naive_pct_max": 24.82758620689655,
+   "supervision_lost_per_day": 0,
+   "callbacks_per_day": 5.2
+  },
+  "adaptive_vs_hairpin_channel_saving_pct": 33.04765540169682,
+  "formula_vs_sim_hairpin_all_err_pct": 10.84377144388586
+ },
+ "rows": [
+  {
+   "seed": 1,
+   "refer_ok": true,
+   "peak_calls_h": 240,
+   "agents": 8,
+   "naive": 19,
+   "formula_hairpin_all": 46,
+   "hairpin all": {
+    "needed": 42,
+    "peak_blocked_at_naive": 26.436781609195403,
+    "failed_at_naive": 69,
+    "supervision_lost": 0,
+    "callbacks": 0,
+    "transfers": 576,
+    "abandoned": 34
+   },
+   "REFER when supported": {
+    "needed": 28,
+    "peak_blocked_at_naive": 0.8547008547008547,
+    "failed_at_naive": 0,
+    "supervision_lost": 107,
+    "callbacks": 0,
+    "transfers": 594,
+    "abandoned": 32
+   },
+   "adaptive": {
+    "needed": 28,
+    "peak_blocked_at_naive": 6.410256410256411,
+    "failed_at_naive": 0,
+    "supervision_lost": 0,
+    "callbacks": 8,
+    "transfers": 588,
+    "abandoned": 45
+   }
+  },
+  {
+   "seed": 2,
+   "refer_ok": true,
+   "peak_calls_h": 128,
+   "agents": 5,
+   "naive": 12,
+   "formula_hairpin_all": 29,
+   "hairpin all": {
+    "needed": 28,
+    "peak_blocked_at_naive": 26.277372262773724,
+    "failed_at_naive": 51,
+    "supervision_lost": 0,
+    "callbacks": 0,
+    "transfers": 343,
+    "abandoned": 27
+   },
+   "REFER when supported": {
+    "needed": 16,
+    "peak_blocked_at_naive": 0.7299270072992701,
+    "failed_at_naive": 0,
+    "supervision_lost": 56,
+    "callbacks": 0,
+    "transfers": 343,
+    "abandoned": 27
+   },
+   "adaptive": {
+    "needed": 21,
+    "peak_blocked_at_naive": 2.18978102189781,
+    "failed_at_naive": 0,
+    "supervision_lost": 0,
+    "callbacks": 5,
+    "transfers": 341,
+    "abandoned": 29
+   }
+  },
+  {
+   "seed": 3,
+   "refer_ok": true,
+   "peak_calls_h": 221,
+   "agents": 13,
+   "naive": 16,
+   "formula_hairpin_all": 56,
+   "hairpin all": {
+    "needed": 42,
+    "peak_blocked_at_naive": 37.61904761904762,
+    "failed_at_naive": 100,
+    "supervision_lost": 0,
+    "callbacks": 0,
+    "transfers": 734,
+    "abandoned": 1
+   },
+   "REFER when supported": {
+    "needed": 17,
+    "peak_blocked_at_naive": 0.47619047619047616,
+    "failed_at_naive": 0,
+    "supervision_lost": 202,
+    "callbacks": 0,
+    "transfers": 694,
+    "abandoned": 7
+   },
+   "adaptive": {
+    "needed": 28,
+    "peak_blocked_at_naive": 8.571428571428571,
+    "failed_at_naive": 0,
+    "supervision_lost": 0,
+    "callbacks": 4,
+    "transfers": 721,
+    "abandoned": 14
+   }
+  },
+  {
+   "seed": 4,
+   "refer_ok": true,
+   "peak_calls_h": 297,
+   "agents": 8,
+   "naive": 19,
+   "formula_hairpin_all": 39,
+   "hairpin all": {
+    "needed": 37,
+    "peak_blocked_at_naive": 28.012048192771083,
+    "failed_at_naive": 69,
+    "supervision_lost": 0,
+    "callbacks": 0,
+    "transfers": 624,
+    "abandoned": 13
+   },
+   "REFER when supported": {
+    "needed": 19,
+    "peak_blocked_at_naive": 0.9036144578313253,
+    "failed_at_naive": 0,
+    "supervision_lost": 179,
+    "callbacks": 0,
+    "transfers": 631,
+    "abandoned": 12
+   },
+   "adaptive": {
+    "needed": 24,
+    "peak_blocked_at_naive": 9.337349397590362,
+    "failed_at_naive": 3,
+    "supervision_lost": 0,
+    "callbacks": 2,
+    "transfers": 626,
+    "abandoned": 8
+   }
+  },
+  {
+   "seed": 5,
+   "refer_ok": true,
+   "peak_calls_h": 239,
+   "agents": 10,
+   "naive": 22,
+   "formula_hairpin_all": 55,
+   "hairpin all": {
+    "needed": 44,
+    "peak_blocked_at_naive": 19.166666666666668,
+    "failed_at_naive": 62,
+    "supervision_lost": 0,
+    "callbacks": 0,
+    "transfers": 603,
+    "abandoned": 12
+   },
+   "REFER when supported": {
+    "needed": 22,
+    "peak_blocked_at_naive": 0.0,
+    "failed_at_naive": 0,
+    "supervision_lost": 169,
+    "callbacks": 0,
+    "transfers": 603,
+    "abandoned": 12
+   },
+   "adaptive": {
+    "needed": 28,
+    "peak_blocked_at_naive": 3.75,
+    "failed_at_naive": 1,
+    "supervision_lost": 0,
+    "callbacks": 4,
+    "transfers": 640,
+    "abandoned": 14
+   }
+  },
+  {
+   "seed": 6,
+   "refer_ok": true,
+   "peak_calls_h": 277,
+   "agents": 9,
+   "naive": 22,
+   "formula_hairpin_all": 45,
+   "hairpin all": {
+    "needed": 46,
+    "peak_blocked_at_naive": 22.846441947565545,
+    "failed_at_naive": 68,
+    "supervision_lost": 0,
+    "callbacks": 0,
+    "transfers": 771,
+    "abandoned": 20
+   },
+   "REFER when supported": {
+    "needed": 25,
+    "peak_blocked_at_naive": 1.9920318725099602,
+    "failed_at_naive": 0,
+    "supervision_lost": 169,
+    "callbacks": 0,
+    "transfers": 726,
+    "abandoned": 21
+   },
+   "adaptive": {
+    "needed": 29,
+    "peak_blocked_at_naive": 2.9962546816479403,
+    "failed_at_naive": 1,
+    "supervision_lost": 0,
+    "callbacks": 3,
+    "transfers": 770,
+    "abandoned": 12
+   }
+  },
+  {
+   "seed": 7,
+   "refer_ok": true,
+   "peak_calls_h": 85,
+   "agents": 4,
+   "naive": 10,
+   "formula_hairpin_all": 25,
+   "hairpin all": {
+    "needed": 24,
+    "peak_blocked_at_naive": 18.0,
+    "failed_at_naive": 25,
+    "supervision_lost": 0,
+    "callbacks": 0,
+    "transfers": 241,
+    "abandoned": 18
+   },
+   "REFER when supported": {
+    "needed": 10,
+    "peak_blocked_at_naive": 0.0,
+    "failed_at_naive": 0,
+    "supervision_lost": 57,
+    "callbacks": 0,
+    "transfers": 264,
+    "abandoned": 25
+   },
+   "adaptive": {
+    "needed": 15,
+    "peak_blocked_at_naive": 2.5974025974025974,
+    "failed_at_naive": 0,
+    "supervision_lost": 0,
+    "callbacks": 6,
+    "transfers": 252,
+    "abandoned": 17
+   }
+  },
+  {
+   "seed": 8,
+   "refer_ok": true,
+   "peak_calls_h": 263,
+   "agents": 6,
+   "naive": 19,
+   "formula_hairpin_all": 40,
+   "hairpin all": {
+    "needed": 38,
+    "peak_blocked_at_naive": 15.95330739299611,
+    "failed_at_naive": 44,
+    "supervision_lost": 0,
+    "callbacks": 0,
+    "transfers": 547,
+    "abandoned": 16
+   },
+   "REFER when supported": {
+    "needed": 21,
+    "peak_blocked_at_naive": 1.4492753623188406,
+    "failed_at_naive": 0,
+    "supervision_lost": 116,
+    "callbacks": 0,
+    "transfers": 585,
+    "abandoned": 15
+   },
+   "adaptive": {
+    "needed": 25,
+    "peak_blocked_at_naive": 3.8910505836575875,
+    "failed_at_naive": 0,
+    "supervision_lost": 0,
+    "callbacks": 3,
+    "transfers": 514,
+    "abandoned": 17
+   }
+  },
+  {
+   "seed": 9,
+   "refer_ok": false,
+   "peak_calls_h": 285,
+   "agents": 13,
+   "naive": 24,
+   "formula_hairpin_all": 59,
+   "hairpin all": {
+    "needed": 59,
+    "peak_blocked_at_naive": 28.275862068965516,
+    "failed_at_naive": 93,
+    "supervision_lost": 0,
+    "callbacks": 0,
+    "transfers": 820,
+    "abandoned": 8
+   },
+   "REFER when supported": {
+    "needed": 59,
+    "peak_blocked_at_naive": 28.275862068965516,
+    "failed_at_naive": 93,
+    "supervision_lost": 0,
+    "callbacks": 0,
+    "transfers": 820,
+    "abandoned": 8
+   },
+   "adaptive": {
+    "needed": 48,
+    "peak_blocked_at_naive": 24.82758620689655,
+    "failed_at_naive": 26,
+    "supervision_lost": 0,
+    "callbacks": 11,
+    "transfers": 865,
+    "abandoned": 11
+   }
+  },
+  {
+   "seed": 10,
+   "refer_ok": true,
+   "peak_calls_h": 294,
+   "agents": 10,
+   "naive": 18,
+   "formula_hairpin_all": 48,
+   "hairpin all": {
+    "needed": 40,
+    "peak_blocked_at_naive": 29.82456140350877,
+    "failed_at_naive": 96,
+    "supervision_lost": 0,
+    "callbacks": 0,
+    "transfers": 713,
+    "abandoned": 17
+   },
+   "REFER when supported": {
+    "needed": 20,
+    "peak_blocked_at_naive": 1.8248175182481752,
+    "failed_at_naive": 0,
+    "supervision_lost": 82,
+    "callbacks": 0,
+    "transfers": 670,
+    "abandoned": 12
+   },
+   "adaptive": {
+    "needed": 24,
+    "peak_blocked_at_naive": 2.9197080291970803,
+    "failed_at_naive": 0,
+    "supervision_lost": 0,
+    "callbacks": 6,
+    "transfers": 705,
+    "abandoned": 23
+   }
+  }
+ ]
+}

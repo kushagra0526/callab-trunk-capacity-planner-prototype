@@ -1,0 +1,8 @@
+site 501: peak 378 calls/h, AI contains 64%, 13 human agents, PBX accepts REFER: True, 16% of transfers need the AI to stay on
+naive Erlang B sizing (AI talk time only, 1% blocking): 21 channels
+hairpin-aware formula (2 channels through queue + talk): 72 channels
+
+policy                  peak-hour blocked @21  failed transfers  channels needed  supervision lost
+hairpin all                             35.2%               126               50                 0
+REFER when supported                     1.1%                 0               23               126
+adaptive                                 4.8%                 0               26                 0

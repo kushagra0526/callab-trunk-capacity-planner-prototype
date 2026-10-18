@@ -1,0 +1,8 @@
+heldout: 40 sites (27 accept REFER on the trunk)
+
+  hairpin all            channels needed 2.38x naive | at naive sizing: peak-hour blocking 29.6% avg, 46.3% worst | supervision lost   0.0/day | callbacks   0.0/day
+  REFER when supported   channels needed 1.50x naive | at naive sizing: peak-hour blocking  9.8% avg, 40.1% worst | supervision lost  84.5/day | callbacks   0.0/day
+  adaptive               channels needed 1.65x naive | at naive sizing: peak-hour blocking 10.6% avg, 32.9% worst | supervision lost   0.0/day | callbacks   6.0/day
+
+  adaptive needs 29% fewer channels than hairpin-all, with 0 supervision lost
+  hairpin-aware formula vs simulated need (hairpin all): 19% mean abs error

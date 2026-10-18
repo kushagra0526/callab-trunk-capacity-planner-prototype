@@ -47,6 +47,7 @@ class Out:
     blocked_by_hour: list = field(default_factory=lambda: [0] * 12)
     calls_by_hour: list = field(default_factory=lambda: [0] * 12)
     queue_waits: list = field(default_factory=list)
+    trace: list = field(default_factory=list)      # (t, channels in use) when run(..., trace=True)
 
     def summary(self):
         w = sorted(self.queue_waits)
@@ -57,7 +58,7 @@ class Out:
                 "queue_wait_p90_s": w[int(0.9 * (len(w) - 1))] if w else 0.0}
 
 
-def run(site: Site, policy, channels: int | None = None, seed_offset: int = 0) -> Out:
+def run(site: Site, policy, channels: int | None = None, seed_offset: int = 0, trace: bool = False) -> Out:
     N = site.channels if channels is None else channels
     rng = random.Random(site.seed * 31 + seed_offset)
     out = Out()
@@ -108,6 +109,8 @@ def run(site: Site, policy, channels: int | None = None, seed_offset: int = 0) -
 
     while ev:
         t, _, kind, cid = heapq.heappop(ev)
+        if trace:
+            out.trace.append((t, used))
         if kind == "arrive":
             out.calls += 1
             h = min(11, int(t // 3600))
